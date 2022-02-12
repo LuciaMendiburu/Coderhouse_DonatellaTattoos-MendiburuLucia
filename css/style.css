@@ -841,7 +841,7 @@ template {
 
 /*------------- cursos -------------*/
 
-.cursos {
+.cursos__index{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -891,7 +891,7 @@ template {
 
 }
 
-.cursos-tatuajes__title {
+.cursos-tatuajes__title__index {
   font-family: Josefin Sans;
   font-style: normal;
   font-weight: 700;
@@ -901,7 +901,7 @@ template {
   margin: 0px;
 }
 
-.cursos-piercings__title {
+.cursos-piercings__title__index {
   font-family: Josefin Sans;
   font-style: normal;
   font-weight: 700;
@@ -911,7 +911,7 @@ template {
   
 }
 
-.cursos-tatuajes__text {
+.cursos-tatuajes__text__index {
   font-family: Josefin Sans;
   font-style: normal;
   font-weight: 300;
@@ -920,7 +920,7 @@ template {
   margin-top: 5px;
 }
 
-.cursos-piercings__text {
+.cursos-piercings__text__index {
   font-family: Josefin Sans;
   font-style: normal;
   font-weight: 300;
@@ -929,7 +929,7 @@ template {
   margin-top: 5px;
 }
 
-.cursos-tatuajes-content{
+.cursos-tatuajes-content__index{
 margin-bottom: 20px;
 margin-left: 4%;
   
@@ -1129,7 +1129,8 @@ max-width: 80%;
 /* ---------- general --------- */
 
 .background-piercings {
-  background-image: url("data/piercingsBackground.png");
+
+  background-image: url("../data/piercingsBackground.png");
  
   /* it fits the backdround image to the size of the browser window */
   display: block;
@@ -1139,4 +1140,517 @@ max-width: 80%;
   height: auto;
  
 }
+
+
+ 
+/* Contacto
+     ========================================================================== */
+ 
+/*
+ 
+ 
+/* ----------- contacto ----------- */
+ 
+.contacto-container {
+  display: flex;
+ 
+}
+.contacto__title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+ 
+.contacto__text {
+  font-family: Josefin Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  margin-top: 1.5%;
+   
+}
+ 
+.contacto__title {
+  font-family: Josefin Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 33px;
+  line-height: 100%;
+  text-align: center;
+  margin-top: 10%;
+  margin-bottom: 1.5%;
+}
+ 
+.contacto-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 55px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+ 
+.contacto__info-container__title{
+    font-family: Josefin Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 30px;
+line-height: 120%;
+}
+ 
+.contacto__info-container__text{
+    font-family: Josefin Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 120%;
+   
+   
+}
+ 
+.contacto__flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* SACAR ESE MARGIN TOP CUANDO PUEDA MODIFICAR EL HEIGHT DEL FORM*/
+ 
+ 
+ 
+  margin-top: 1.5%;
+}
+ 
+.contacto__info-container {
+  width: 20%;
+  margin-left: 5%;
+}
+ 
+.contacto__form-container {
+  width:25%;
+  height: 20%;
+  margin-left: 10%;
+  /*box-sizing: border-box;*/
+  background-color: #ffe2bb;
+  padding: 1%;
+  text-align: center;
+  border-radius: 1%;
+}
+ 
+.contacto__form-container__title {
+  font-family: Josefin Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 26px;
+  /* identical to box height */
+ 
+  color: #000000;
+}
+ 
+.contacto__form-container__item {
+  display: inline-block;
+  /* aunque este el inline block no me deja darle alto, la manera de
+que quede bien fue dandole mas pading*/
+  border-style: none;
+  margin: 1%;
+  width: 90%;
+  font-family: Josefin Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 15px;
+  color: #757575;
+  padding: 3%;
+}
+ 
+ 
+.contacto__form-container__btn {
+  border-style: none;
+  width: 96%;
+  padding: 3%;
+  font-family: Josefin Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 15px;
+  background-color: #ffa429;
+  color: #ffffff;
+  margin-top: 4%;
+  margin-bottom: 4%;
+  cursor: pointer;
+}
+ 
+ 
+/* ---------nav bar ----------*/
+ 
+.nav-bar-contacto__flex {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #f363ac;
+}
+ 
+.nav-bar-contacto__text {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 13px;
+  margin: 15px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  list-style: none;
+}
+ 
+.nav-bar-contacto__text__link {
+  text-decoration: none;
+  color: #f363ac;
+}
+ 
+ 
+/* ----------- body ----------- */
+ 
+.background-contacto{
+  background-image: url("../data/contacto-turnosBackground.png");
+ 
+  /* it fits the backdround image to the size of the browser window */
+  display: block;
+  background-size: cover;
+  background-position: 50% 50%;
+  max-width: 100%;
+  height: auto;
+ 
+}
+ 
+
+/* Cursos
+     ========================================================================== */
+
+/*
+
+
+/* ------- cursos --------- */
+
+.cursos__title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+/*
+.cursos__title {
+  font-family: Josefin Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 33px;
+  line-height: 100%;
+  text-align: center;
+  margin-top: 10%;
+  margin-bottom: 1.5%;
+} */
+
+.cursos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  justify-content: space-evenly;
+  margin-top: 140px;
+}
+
+.cursos__title {
+  font-family: Josefin Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 33px;
+  text-align: center;
+  margin-top: 10%;
+  margin-bottom:1%;
+}
+
+.cursos__text {
+  font-family: Josefin Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  margin-top: 1.5%;
+
+}
+
+.cursos-tatuajes__title {
+  font-family: Josefin Sans;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 120%;
+  text-align: center;
+}
+
+.cursos-piercings__title {
+  font-family: Josefin Sans;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+  margin: 1%;
+}
+
+.cursos-tatuajes__text {
+  font-family: Josefin Sans;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.cursos-piercings__text {
+  font-family: Josefin Sans;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+
+
+}
+
+.cursos-piercings{
+  width: 285px;
+  height:271px ;
+
+  background: url("../data/curPiercings.png") no-repeat center;
+  display: inline-block;
+
+  /*centrar contenido*/
+  display:flex;
+  flex-direction: column;
+
+  /*centrar contenido eje X*/
+  justify-content:center;
+
+  /*centrar contenido eje Y*/
+  align-items: center;
+  }
+
+.cursos-tatuajes{
+  width: 251px;
+  height:294px ;
+
+  background: url("../data/curTattoos.png") no-repeat center;
+  display: inline-block;
+
+  /*centrar contenido*/
+  display:flex;
+  flex-direction: column;
+
+  /*centrar contenido eje X*/
+  justify-content:center;
+
+  /*centrar contenido eje Y*/
+  align-items: center;
+
+}
+
+.cursos-tatuajes__content-container{
+margin-left: 5%;
+}
+
+.cursos-piercings__content-container{
+
+ margin-top: 30px;
+}
+
+
+/* ----------- body ----------- */
+ 
+.background-cursos{
+  background-image: url("../data/cursosBackground.png");
+ 
+  /* it fits the backdround image to the size of the browser window */
+  display: block;
+  background-size: cover;
+  background-position: 50% 50%;
+  max-width: 100%;
+  height: auto;
+ 
+}
+
+/* Turnos
+     ========================================================================== */
+
+/*
+
+/*turnos*/
+
+.turnos-container {
+  display: flex;
+  
+}
+.turnos__title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.turnos__text {
+  font-family: Josefin Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  margin-top: 1.5%;
+  
+  
+  /* SACAR ESE MARGIN BOTTOM CUANDO PUEDA MODIFICAR EL HEIGHT DEL FORM*/
+
+
+
+  margin-bottom: 2.5%;
+}
+
+.turnos__title {
+  font-family: Josefin Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 33px;
+  line-height: 100%;
+  text-align: center;
+  margin-top: 10%;
+  margin-bottom: 1.5%;
+}
+
+.turnos-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 55px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.turnos__info-container__title{
+    font-family: Josefin Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 30px;
+line-height: 120%;
+}
+
+.turnos__info-container__text{
+    font-family: Josefin Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 120%;
+   
+    
+}
+
+.turnos__flex {
+    margin-top: 4%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.turnos__info-container {
+  width: 20%;
+  margin-left: 5%;
+}
+
+.turnos__form-container {
+  width:25%;
+  height: 20%;
+  margin-left: 10%;
+  /*box-sizing: border-box;*/
+  background-color: #ffe2bb;
+  padding: 1%;
+  text-align: center;
+  border-radius: 1%;
+}
+
+.turnos__form-container__title {
+  font-family: Josefin Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 26px;
+  /* identical to box height */
+
+  color: #000000;
+}
+
+.turnos__form-container__item {
+  display: inline-block;
+  /* aunque este el inline block no me deja darle alto, la manera de
+que quede bien fue dandole mas pading*/
+  border-style: none;
+  margin: 1%;
+  width: 90%;
+  font-family: Josefin Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 15px;
+  color: #757575;
+  padding: 3%;
+}
+
+.turnos__form-container__drop-down{
+
+    display: inline-block;
+    /* aunque este el inline block no me deja darle alto, la manera de
+    que quede bien fue dandole mas pading*/
+    border-style: none;
+    margin: 1%;
+    width: 90%;
+    font-family: Josefin Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 15px;
+    color: #757575;
+    padding: 3%;
+
+}
+
+
+.turnos__form-container__btn {
+  border-style: none;
+  width: 96%;
+  padding: 3%;
+  font-family: Josefin Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 15px;
+  background-color: #ffa429;
+  color: #ffffff;
+  margin-top: 4%;
+  margin-bottom: 4%;
+  cursor: pointer;
+}
+
+
+/* ----------- general ----------- */
+
+.background-turnos{
+  background-image: url("../data/contacto-turnosBackground.png");
+ 
+  /* it fits the backdround image to the size of the browser window */
+  display: block;
+  background-size: cover;
+  background-position: 50% 50%;
+  max-width: 100%;
+  height: auto;
+ 
+}
+
+
+
 
