@@ -18,10 +18,66 @@
       crossorigin="anonymous"
     ></script>
 
-    
+     
   </head>
-
+   
   <body class="background-index">
+
+     
+      <nav class="navbar navbar-light nav-bar-mb-tb d-xxl-none d-xl-none d-xxl-block d-lg-none d-xl-block " style="width: 100%;">
+        <div class="container-fluid ">
+          <a class="navbar-brand" href="#"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header nav-bar-mb-tb__title">
+              <h5 class="offcanvas-title " id="offcanvasNavbarLabel">Donatella <br> Tattoos</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body nav-bar-mb-tb">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item ">
+                  <a class="nav-link active nav-bar-mb-tb__item" aria-current="page" href="index.html">INICIO</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link nav-bar-mb-tb__item" href="contacto.html">CONTACTO</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link nav-bar-mb-tb__item" href="cursos.html">CURSOS</a>
+                </li>
+
+                <li class="nav-item ">
+                  <a class="nav-link nav-bar-mb-tb__item" href="">TRABAJOS</a>
+                </li>
+
+                <li class="nav-item ">
+                  <a class="nav-link nav-bar-mb-tb__item" href="">FAQ</a>
+                </li>
+
+                <li class="nav-item ">
+                  <a class="nav-link nav-bar-mb-tb__item" href="piercings.html">PIERCINGS</a>
+                </li>
+
+                <li class="nav-item ">
+                  <a class="nav-link nav-bar-mb-tb__item" href="">UBICACIÓN</a>
+                </li>
+
+                <li class="nav-item ">
+                  <a class="nav-link nav-bar-mb-tb__item" href="turnos.html">TURNOS</a>
+                </li>
+
+
+               
+              </ul>
+             
+            </div>
+          </div>
+        </div>
+      </nav>
+     
+
+    <div class="nav-bar-desktop">
     <div class="title-bar">
       <h6 class="title-bar__text1">Seguime</h6>
       <a
@@ -80,6 +136,7 @@
           </li>
         </ul>
       </nav>
+    </div>
     </header>
 
     <!-- intro -->
@@ -99,21 +156,29 @@
     <!-- Items -->
 
     <section class="items">
-      <div class="items__container-tattoos">
+
+      
+      <div class="items__container-tattoos "  id="intem-tattoos">
         <a class="items__tattoos" href="">TATTOOS</a>
       </div>
+      
 
-      <div class="items__container-piercings">
+  
+      <div class="items__container-piercings " id="intem-piercings">
         <a class="items__piercings" href="">PIERCINGS</a>
       </div>
+    
 
-      <div class="items__container-cursos">
+    
+      <div class="items__container-cursos " id="intem-cursos">
         <a class="items__cursos" href="">CURSOS</a>
       </div>
-
-      <div class="items__container-tienda">
+    
+      <div class="items__container-tienda " id="intem-tienda">
         <a class="items__tienda" href="">TIENDA</a>
       </div>
+    
+
     </section>
 
     <!-- Sobre mi -->
@@ -151,13 +216,13 @@
       <div id="carouselExampleControls" class="carousel slide carousel-fade " data-bs-ride="carousel">
         <div class="carousel-inner ">
           <div class="carousel-item active">
-            <img src="data/tattoo1.png" class="d-block w-100 img-fluid" alt="...">
+            <img src="data/tattoo1.png" class="  img-fluid" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="data/tattoo2.png" class="d-block w-100 img-fluid" alt="...">
+            <img src="data/tattoo2.png" class="  img-fluid" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="data/tattoo3.png" class="d-block w-100 img-fluid" alt="...">
+            <img src="data/tattoo3.png" class="  img-fluid" alt="...">
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -329,7 +394,7 @@
     <!-- ubicación -->
 
     <section class="ubicacion">
-      <iframe
+      <iframe id="mapa"
         class="ubicacion-map"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60940.7559419943!2d102.5089851936364!3d17.325329095854435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31239661291ff30d%3A0x2e48302cd0eb7960!2s2314%2C%20Tambon%20Nam%20Phon%2C%20Amphoe%20Nong%20Wua%20So%2C%20Chang%20Wat%20Udon%20Thani%2041360%2C%20Thailand!5e0!3m2!1sen!2sar!4v1640797981750!5m2!1sen!2sar"
         width="514"
@@ -337,9 +402,9 @@
         style="border: 0"
         allowfullscreen=""
         loading="lazy"
-      ></iframe>
+      ></iframe >
 
-      <div class="ubicacion-info">
+      <div class="ubicacion-info" id="ubicacion-info">
         <h3 class="ubicacion-info__title">CONTACTO</h3>
         <p class="ubicacion-info__text">Calle 5847, Barrio</p>
         <p class="ubicacion-info__text">mail@gmail.com</p>
