@@ -1,0 +1,448 @@
+
+
+
+
+
+@media (max-width: 480px) {
+  /* Cursos
+     ========================================================================== */
+
+  /*
+/* ------- cursos --------- */
+
+.cursos__title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  
+  /*
+  .cursos__title {
+  font-family: Josefin Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 33px;
+  line-height: 100%;
+  text-align: center;
+  margin-top: 10%;
+  margin-bottom: 1.5%;
+  } */
+  
+  .cursos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    justify-content: space-evenly;
+    margin-top: 60px;
+    flex-direction: column;
+  }
+  
+  .cursos__title {
+    font-family: Josefin Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 33px;
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 1%;
+  }
+  
+  .cursos__text {
+    font-family: Josefin Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    margin-top: 1.5%;
+    text-align: center;
+  }
+  
+  .cursos-tatuajes__title {
+    font-family: Josefin Sans;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 120%;
+    text-align: center;
+  }
+  
+  .cursos-piercings__title {
+    font-family: Josefin Sans;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    margin: 1%;
+  }
+  
+  .cursos-tatuajes__text {
+    font-family: Josefin Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+  }
+  
+  .cursos-piercings__text {
+    font-family: Josefin Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+  }
+  
+  .cursos-piercings {
+    width: 285px;
+    height: 271px;
+    margin-top: 10%;
+  
+    background: url("../data/curPiercings.png") no-repeat center;
+    display: inline-block;
+  
+    /*centrar contenido*/
+    display: flex;
+    flex-direction: column;
+  
+    /*centrar contenido eje X*/
+    justify-content: center;
+  
+    /*centrar contenido eje Y*/
+    align-items: center;
+  }
+  
+  .cursos-tatuajes {
+    width: 251px;
+    height: 294px;
+  
+    background: url("../data/curTattoos.png") no-repeat center;
+    display: inline-block;
+  
+    /*centrar contenido*/
+    display: flex;
+    flex-direction: column;
+  
+    /*centrar contenido eje X*/
+    justify-content: center;
+  
+    /*centrar contenido eje Y*/
+    align-items: center;
+  }
+  
+  .cursos-tatuajes__content-container {
+    margin-left: 5%;
+  }
+  
+  .cursos-piercings__content-container {
+    margin-top: 30px;
+  }
+  
+  /* ----------- body ----------- */
+  
+  .background-cursos {
+    background-image: url("../data/cursosBackground.png");
+  
+    /* it fits the backdround image to the size of the browser window */
+    display: block;
+    background-size: cover;
+    background-position: 50% 50%;
+    max-width: 100%;
+    height: auto;
+  }
+
+}
+
+/*! ----------------------- TABLET ----------------------- */
+
+@media (min-width: 481px) and (max-width: 1024px) {
+
+/* Cursos
+     ========================================================================== */
+
+  /*
+/* ------- cursos --------- */
+
+.cursos__title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  
+  /*
+  .cursos__title {
+  font-family: Josefin Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 33px;
+  line-height: 100%;
+  text-align: center;
+  margin-top: 10%;
+  margin-bottom: 1.5%;
+  } */
+  
+  .cursos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    justify-content: space-evenly;
+    margin-top: 140px;
+  }
+  
+  .cursos__title {
+    font-family: Josefin Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 33px;
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 1%;
+  }
+  
+  .cursos__text {
+    font-family: Josefin Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    margin-top: 1.5%;
+    text-align: center;
+  }
+  
+  .cursos-tatuajes__title {
+    font-family: Josefin Sans;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 120%;
+    text-align: center;
+  }
+  
+  .cursos-piercings__title {
+    font-family: Josefin Sans;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    margin: 1%;
+  }
+  
+  .cursos-tatuajes__text {
+    font-family: Josefin Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+  }
+  
+  .cursos-piercings__text {
+    font-family: Josefin Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+  }
+  
+  .cursos-piercings {
+    width: 285px;
+    height: 271px;
+  
+    background: url("../data/curPiercings.png") no-repeat center;
+    display: inline-block;
+  
+    /*centrar contenido*/
+    display: flex;
+    flex-direction: column;
+  
+    /*centrar contenido eje X*/
+    justify-content: center;
+  
+    /*centrar contenido eje Y*/
+    align-items: center;
+  }
+  
+  .cursos-tatuajes {
+    width: 251px;
+    height: 294px;
+  
+    background: url("../data/curTattoos.png") no-repeat center;
+    display: inline-block;
+  
+    /*centrar contenido*/
+    display: flex;
+    flex-direction: column;
+  
+    /*centrar contenido eje X*/
+    justify-content: center;
+  
+    /*centrar contenido eje Y*/
+    align-items: center;
+  }
+  
+  .cursos-tatuajes__content-container {
+    margin-left: 5%;
+  }
+  
+  .cursos-piercings__content-container {
+    margin-top: 30px;
+  }
+  
+  /* ----------- body ----------- */
+  
+  .background-cursos {
+    background-image: url("../data/cursosBackground.png");
+  
+    /* it fits the backdround image to the size of the browser window */
+    display: block;
+    background-size: cover;
+    background-position: 50% 50%;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  
+
+}
+
+
+/*! ----------------------- DESKTOP ----------------------- */
+
+@media (min-width: 1025px) {
+  /* Cursos
+     ========================================================================== */
+
+  /*
+/* ------- cursos --------- */
+
+.cursos__title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+
+
+
+  .cursos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    justify-content: space-evenly;
+    margin-top: 140px;
+  }
+
+  .cursos__title {
+    font-family: Josefin Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 33px;
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 1%;
+  }
+
+  .cursos__text {
+    font-family: Josefin Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    margin-top: 1.5%;
+  }
+
+  .cursos-tatuajes__title {
+    font-family: Josefin Sans;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 120%;
+    text-align: center;
+  }
+
+  .cursos-piercings__title {
+    font-family: Josefin Sans;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    margin: 1%;
+  }
+
+  .cursos-tatuajes__text {
+    font-family: Josefin Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+  }
+
+  .cursos-piercings__text {
+    font-family: Josefin Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+  }
+
+  .cursos-piercings {
+    width: 285px;
+    height: 271px;
+
+    background: url("../data/curPiercings.png") no-repeat center;
+    display: inline-block;
+
+    /*centrar contenido*/
+    display: flex;
+    flex-direction: column;
+
+    /*centrar contenido eje X*/
+    justify-content: center;
+
+    /*centrar contenido eje Y*/
+    align-items: center;
+  }
+
+  .cursos-tatuajes {
+    width: 251px;
+    height: 294px;
+
+    background: url("../data/curTattoos.png") no-repeat center;
+    display: inline-block;
+
+    /*centrar contenido*/
+    display: flex;
+    flex-direction: column;
+
+    /*centrar contenido eje X*/
+    justify-content: center;
+
+    /*centrar contenido eje Y*/
+    align-items: center;
+  }
+
+  .cursos-tatuajes__content-container {
+    margin-left: 5%;
+  }
+
+  .cursos-piercings__content-container {
+    margin-top: 30px;
+  }
+
+  /* ----------- body ----------- */
+
+  .background-cursos {
+    background-image: url("../data/cursosBackground.png");
+
+    /* it fits the backdround image to the size of the browser window */
+    display: block;
+    background-size: cover;
+    background-position: 50% 50%;
+    max-width: 100%;
+    height: auto;
+  }
+
+}
