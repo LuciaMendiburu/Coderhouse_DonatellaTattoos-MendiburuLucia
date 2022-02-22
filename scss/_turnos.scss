@@ -1,87 +1,47 @@
 /*! ----------------------- MOBILE FIRST ----------------------- */
 
 @media (max-width: 480px) {
-
-/* Turnos
+  /* Turnos
      ========================================================================== */
- 
+
   /*
 /*turnos*/
 
-@include formResponsive(mobile,turnos);
+  @include formResponsive(mobile, turnos);
 
-/* ----------- general ----------- */
+  /* ----------- general ----------- */
 
-.background-turnos {
-  background-image: url("../data/contacto-turnosBackground.png");
-
-  /* it fits the backdround image to the size of the browser window */
-  display: block;
-  background-size: cover;
-  background-position: 50% 50%;
-  max-width: 100%;
-  height: auto;
-} 
-
+  @include background(turnos, contacto-turnosBackground);
 }
-
-
-
-
-
 
 /*! ----------------------- TABLET ----------------------- */
 
 @media (min-width: 481px) and (max-width: 1024px) {
-
- /* Turnos
+  /* Turnos
      ========================================================================== */
- 
+
   /*
 /*turnos*/
 
-@include formResponsive(tablet,turnos);
+  @include formResponsive(tablet, turnos);
 
-/* ----------- general ----------- */
+  /* ----------- general ----------- */
 
-.background-turnos {
-  background-image: url("../data/contacto-turnosBackground.png");
-
-  /* it fits the backdround image to the size of the browser window */
-  display: block;
-  background-size: cover;
-  background-position: 50% 50%;
-  max-width: 100%;
-  height: auto;
-} 
-
-
+  @include background(turnos, contacto-turnosBackground);
 }
 
 /*! ----------------------- DESKTOP ----------------------- */
 
 @media (min-width: 1025px) {
-
-/* Turnos
+  /* Turnos
      ========================================================================== */
- 
+
   /*
 /*turnos*/
 
-@include formResponsive(desktop,turnos);
+  @include formResponsive(desktop, turnos);
 
   /* ----------- general ----------- */
 
-  .background-turnos {
-    background-image: url("../data/contacto-turnosBackground.png");
-
-    /* it fits the backdround image to the size of the browser window */
-    display: block;
-    background-size: cover;
-    background-position: 50% 50%;
-    max-width: 100%;
-    height: auto;
-  }
-
-
+  @include background(turnos, contacto-turnosBackground);
 }

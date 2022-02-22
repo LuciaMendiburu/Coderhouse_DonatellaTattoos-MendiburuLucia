@@ -11,22 +11,10 @@
 
   @include formResponsive(mobile, contacto);
 
-  
-
   //esta clase no esta en el html
 
   /* ----------- body ----------- */
-
-  .background-contacto {
-    background-image: url("../data/contacto-turnosBackground.png");
-
-    /* it fits the backdround image to the size of the browser window */
-    display: block;
-    background-size: cover;
-    background-position: 50% 50%;
-    max-width: 100%;
-    height: auto;
-  }
+  @include background(contacto, contacto-turnosBackground);
 }
 
 /*! ----------------------- TABLET ----------------------- */
@@ -42,20 +30,9 @@
 
   @include formResponsive(tablet, contacto);
 
-  
-
   /* ----------- body ----------- */
 
-  .background-contacto {
-    background-image: url("../data/contacto-turnosBackground.png");
-
-    /* it fits the backdround image to the size of the browser window */
-    display: block;
-    background-size: cover;
-    background-position: 50% 50%;
-    max-width: 100%;
-    height: auto;
-  }
+  @include background(contacto, contacto-turnosBackground);
 }
 
 /*! ----------------------- DESKTOP ----------------------- */
@@ -73,18 +50,7 @@
 
   @include formResponsive(desktop, contacto);
 
-  
-
   /* ----------- body ----------- */
 
-  .background-contacto {
-    background-image: url("../data/contacto-turnosBackground.png");
-
-    /* it fits the backdround image to the size of the browser window */
-    display: block;
-    background-size: cover;
-    background-position: 50% 50%;
-    max-width: 100%;
-    height: auto;
-  }
+  @include background(contacto, contacto-turnosBackground);
 }

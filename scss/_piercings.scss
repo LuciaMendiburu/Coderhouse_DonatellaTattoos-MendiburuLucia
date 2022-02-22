@@ -10,17 +10,7 @@
   @include piercingsResponsive();
 
   /* ---------- general --------- */
-
-  .background-piercings {
-    background-image: url("../data/piercingsBackground.png");
-
-    /* it fits the backdround image to the size of the browser window */
-    display: block;
-    background-size: cover;
-    background-position: 50% 50%;
-    max-width: 100%;
-    height: auto;
-  }
+  @include background(piercings, piercingsBackground);
 }
 
 /*! ----------------------- TABLET ----------------------- */
@@ -36,16 +26,7 @@
 
   /* ---------- general --------- */
 
-  .background-piercings {
-    background-image: url("../data/piercingsBackground.png");
-
-    /* it fits the backdround image to the size of the browser window */
-    display: block;
-    background-size: cover;
-    background-position: 50% 50%;
-    max-width: 100%;
-    height: auto;
-  }
+  @include background(piercings, piercingsBackground);
 }
 
 /*! ----------------------- DESKTOP ----------------------- */
@@ -61,14 +42,5 @@
 
   /* ---------- general --------- */
 
-  .background-piercings {
-    background-image: url("../data/piercingsBackground.png");
-
-    /* it fits the backdround image to the size of the browser window */
-    display: block;
-    background-size: cover;
-    background-position: 50% 50%;
-    max-width: 100%;
-    height: auto;
-  }
+  @include background(piercings, piercingsBackground);
 }

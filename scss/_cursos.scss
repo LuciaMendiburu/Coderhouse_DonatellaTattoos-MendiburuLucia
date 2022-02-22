@@ -8,17 +8,7 @@
   @include cursosResponsive(mobile);
 
   /* ----------- body ----------- */
-
-  .background-cursos {
-    background-image: url("../data/cursosBackground.png");
-
-    /* it fits the backdround image to the size of the browser window */
-    display: block;
-    background-size: cover;
-    background-position: 50% 50%;
-    max-width: 100%;
-    height: auto;
-  }
+  @include background(cursos, cursosBackground);
 }
 
 /*! ----------------------- TABLET ----------------------- */
@@ -30,20 +20,11 @@
   /*
 /* ------- cursos --------- */
 
-@include cursosResponsive(tablet);
+  @include cursosResponsive(tablet);
 
   /* ----------- body ----------- */
 
-  .background-cursos {
-    background-image: url("../data/cursosBackground.png");
-
-    /* it fits the backdround image to the size of the browser window */
-    display: block;
-    background-size: cover;
-    background-position: 50% 50%;
-    max-width: 100%;
-    height: auto;
-  }
+  @include background(cursos, cursosBackground);
 }
 
 /*! ----------------------- DESKTOP ----------------------- */
@@ -54,18 +35,9 @@
 
   /*
 /* ------- cursos --------- */
-@include cursosResponsive(desktop);
+  @include cursosResponsive(desktop);
 
   /* ----------- body ----------- */
 
-  .background-cursos {
-    background-image: url("../data/cursosBackground.png");
-
-    /* it fits the backdround image to the size of the browser window */
-    display: block;
-    background-size: cover;
-    background-position: 50% 50%;
-    max-width: 100%;
-    height: auto;
-  }
+  @include background(cursos, cursosBackground);
 }

@@ -123,7 +123,7 @@
 
   /*------------- cursos -------------*/
 
-  @include cursosResponsive(mobile);
+  @include cursosIndexResponsive(mobile);
 
   /*------------- parallax tienda -------------*/
 
@@ -156,21 +156,7 @@
 
   /*-------------  general -------------*/
 
-  .background-index {
-    background-image: url("data/Background.png");
-
-    /* it fits the backdround image to the size of the browser window */
-    display: block;
-    background-size: cover;
-    background-position: 50% 50%;
-    max-width: 100%;
-    height: auto;
-  }
-
-  a {
-    color: map-get($colores, negro);
-    text-decoration: none;
-  }
+  @include background(index, Background);
 
   .ubicacion {
     display: grid;
@@ -227,7 +213,7 @@
     }
 
     .sobre-mi__img {
-      margin-left: 110px;   
+      margin-left: 110px;
     }
   }
 
@@ -325,7 +311,7 @@
 
   /*------------- cursos -------------*/
 
-  @include cursosResponsive(tablet);
+  @include cursosIndexResponsive(tablet);
 
   .cursos-tatuajes-container {
     margin-top: 300px;
@@ -354,21 +340,7 @@
 
   /*-------------  general -------------*/
 
-  .background-index {
-    background-image: url("data/Background.png");
-
-    /* it fits the backdround image to the size of the browser window */
-    display: block;
-    background-size: cover;
-    background-position: 50% 50%;
-    max-width: 100%;
-    height: auto;
-  }
-
-  a {
-    color: map-get($colores, negro);
-    text-decoration: none;
-  }
+  @include background(index, Background);
 }
 
 /*! ----------------------- DESKTOP ----------------------- */
@@ -503,7 +475,7 @@
 
   /*------------- cursos -------------*/
 
-  @include cursosResponsive(desktop);
+  @include cursosIndexResponsive(desktop);
 
   /*------------- parallax tienda -------------*/
 
@@ -527,41 +499,24 @@
 
   /*------------- footer -------------*/
 
-  @include  footerReponsive(desktop);
+  @include footerReponsive(desktop);
 
-  .footer{
+  .footer {
+    .footer__socialMedia {
+      margin-left: 50%;
+      margin-top: 70px;
+    }
 
-  .footer__socialMedia {
-   
-    margin-left: 50%;
-    margin-top: 70px;
+    .footer__socialMedia__title {
+      margin-bottom: 10px;
+    }
+
+    .footer__socialMedia__icon {
+      margin-left: 5px;
+    }
   }
-
-  .footer__socialMedia__title {
-    margin-bottom: 10px;
-  }
-
-  .footer__socialMedia__icon {
-    margin-left: 5px;
-  }
-
-}
 
   /*-------------  general -------------*/
 
-  .background-index {
-    background-image: url("data/Background.png");
-
-    /* it fits the backdround image to the size of the browser window */
-    display: block;
-    background-size: cover;
-    background-position: 50% 50%;
-    max-width: 100%;
-    height: auto;
-  }
-
-  a {
-    color: map-get($colores, negro);
-    text-decoration: none;
-  }
+  @include background(index, Background);
 }

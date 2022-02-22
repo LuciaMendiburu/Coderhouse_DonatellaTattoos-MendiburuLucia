@@ -1,15 +1,9 @@
-
-
-
 @import "_var-index";
 @import "_var-header";
 @import "_var-footer";
 @import "_var-contacto-turnos";
 @import "_var-piercings";
 @import "_var-cursos";
-
-
-
 
 //------colores------//
 
@@ -53,29 +47,36 @@ $colores: (
   text-decoration: none;
 }
 
-
 //------textos con título rosa------//
 
-
-
-
-@mixin rosaTitle($font-size){
-
+@mixin rosaTitle($font-size) {
   font-family: "Josefin Sans", sans-serif;
-        font-style: normal;
-        font-weight: bold;
-        font-size: $font-size ;
-        line-height: 100%;
-        color: map-get($colores, rosa);
+  font-style: normal;
+  font-weight: bold;
+  font-size: $font-size;
+  line-height: 100%;
+  color: map-get($colores, rosa);
 }
 
-@mixin rosaTitle__txt($font-size){
-
+@mixin rosaTitle__txt($font-size) {
   font-family: Josefin Sans;
-    font-style: normal;
-    font-weight: normal;
-    font-size: $font-size;
-    color: map-get($colores, negro);
+  font-style: normal;
+  font-weight: normal;
+  font-size: $font-size;
+  color: map-get($colores, negro);
 }
 
+//------imágenes de fondo ------//
 
+@mixin background($name, $img) {
+  .background-#{$name} {
+    background-image: url("../data/#{$img}.png");
+
+    /* it fits the backdround image to the size of the browser window */
+    display: block;
+    background-size: cover;
+    background-position: 50% 50%;
+    max-width: 100%;
+    height: auto;
+  }
+}

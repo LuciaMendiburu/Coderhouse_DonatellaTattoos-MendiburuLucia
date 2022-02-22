@@ -11,17 +11,14 @@
     $margin-left: 10%;
     $margin-top: 120px;
     $font-size: 63px;
-  }
-  @else if $responsive == "tablet" {
+  } @else if $responsive == "tablet" {
     $margin-left: 10%;
     $margin-top: 90px;
     $font-size: 63px;
-  }
-  @else if $responsive == "desktop" {
+  } @else if $responsive == "desktop" {
     $margin-left: 20%;
     $margin-top: 60px;
     $font-size: 63px;
-
   }
 
   .intro {
@@ -56,20 +53,17 @@
     $flexDirection-img: row;
     $fontWeight-txt: 600;
     $margin-top: 300px;
-  }
-  @else if $responsive == "tablet" {
-    $margin-img:  10%;
+  } @else if $responsive == "tablet" {
+    $margin-img: 10%;
     $flexDirection-img: row;
     $fontWeight-txt: 600;
     $margin-top: 300px;
-  }
-  @else if $responsive == "desktop"{
-    $margin-img:  0%;
+  } @else if $responsive == "desktop" {
+    $margin-img: 0%;
     $flexDirection-img: row;
     $fontWeight-txt: 600;
     $margin-top: 200px;
   }
-  
 
   .items {
     display: flex;
@@ -135,22 +129,20 @@
     $size-text1: 34px;
     $size-text2: 16px;
     $size-img: 80%;
-  
-  }@else if $responsive == "tablet" {
+  } @else if $responsive == "tablet" {
     $flex-direction: row;
     $margin-top-container: 60px;
     $margin-top-textFlex: 90px;
     $size-text1: 34px;
     $size-text2: 16px;
     $size-img: 40%;
-  }@else if $responsive == "desktop" {
+  } @else if $responsive == "desktop" {
     $flex-direction: row;
     $margin-top-container: 60px;
-    $margin-top-textFlex:120px;
+    $margin-top-textFlex: 120px;
     $size-text1: 34px;
     $size-text2: 16px;
     $size-img: 32%;
-
   }
 
   .sobre-mi {
@@ -194,15 +186,12 @@
     $margin: 0;
     $width: 100%;
     $height: 565px;
-  }
-  @else if $responsive == "tablet" {
+  } @else if $responsive == "tablet" {
     $margin: 0;
     $width: 100%;
     $height: 565px;
-
-  }
-  @else if $responsive == "desktop" {
-    $margin: 10px;
+  } @else if $responsive == "desktop" {
+    $margin: 0px;
     $width: 100%;
     $height: 565px;
   }
@@ -297,7 +286,7 @@
 
 //------cursos------//
 
-@mixin cursosResponsive($responsive) {
+@mixin cursosIndexResponsive($responsive) {
   $flex-direction: 0;
   $margin-tatuajes: 0;
   $margin-piercings: 0;
@@ -310,22 +299,19 @@
     $margin-piercings: 0%;
     $weight-title: 700;
     $weight-text: 300;
-  }
-  @else if $responsive == "tablet"{
+  } @else if $responsive == "tablet" {
+    $flex-direction: row;
+    $margin-tatuajes: 0%;
+    $margin-piercings: 0%;
+    $weight-title: 700;
+    $weight-text: 300;
+  } @else if $responsive == "desktop" {
     $flex-direction: row;
     $margin-tatuajes: 0%;
     $margin-piercings: 0%;
     $weight-title: 700;
     $weight-text: 300;
   }
-  @else if $responsive == "desktop"{
-    $flex-direction: row;
-    $margin-tatuajes: 0%;
-    $margin-piercings: 0%;
-    $weight-title: 700;
-    $weight-text: 300;
-  }
-  
 
   .cursos__index {
     display: flex;
@@ -385,17 +371,14 @@
     $flex-direction: column;
     $size-title: 25px;
     $size-text: 18px;
-  }
-  @else if $responsive == "tablet" {
+  } @else if $responsive == "tablet" {
     $flex-direction: row;
     $size-title: 25px;
     $size-text: 18px;
-  }
-  @else if $responsive == "desktop"{
+  } @else if $responsive == "desktop" {
     $flex-direction: row;
     $size-title: 25px;
     $size-text: 18px;
-
   }
 
   .ubicacion {

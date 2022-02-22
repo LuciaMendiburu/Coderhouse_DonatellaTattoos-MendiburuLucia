@@ -1,6 +1,4 @@
-
 //-------------------cursos--------------------------------
-
 
 @mixin cursosResponsive($responsive) {
   $margin-top-cursos: 0;
@@ -24,7 +22,6 @@
     $fontWeight-txt: 300;
     $fontWeight-title: 700;
     $margin-img: 2%;
-
   } @else if $responsive == "desktop" {
     $margin-top-cursos: 40px;
     $flex-direction-cursos: row;

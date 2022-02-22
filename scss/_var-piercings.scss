@@ -1,13 +1,8 @@
-
-
 @mixin piercingsResponsive() {
-   
-    //mismo código para todas las paginas porque la 
-    //bootstrap ya lo hace responsive
+  //mismo código para todas las paginas porque la
+  //bootstrap ya lo hace responsive
 
-
-  
-.piercings__title-container {
+  .piercings__title-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -33,5 +28,4 @@
   .galeria {
     max-width: 80%;
   }
-
 }

@@ -15,24 +15,20 @@
     $marginLeft-socialMedia: 10%;
     $marginTop-socialMedia: 100px;
     $height-socialMedia: 60%;
-  }
-  @else if $responsive == "tablet" {
-
+  } @else if $responsive == "tablet" {
     $height-container: 209px;
     $flexDirection-container: row;
     $marginLeft-logo: 5%;
     $marginLeft-socialMedia: 50%;
     $marginTop-socialMedia: 70px;
     $height-socialMedia: auto;
-  }
-  @else if $responsive == "desktop" {
+  } @else if $responsive == "desktop" {
     $height-container: 209px;
     $flexDirection-container: row;
     $marginLeft-logo: 5%;
     $marginLeft-socialMedia: 50%;
     $marginTop-socialMedia: 70px;
     $height-socialMedia: auto;
-
   }
 
   .footer {
