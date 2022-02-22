@@ -1,0 +1,247 @@
+@mixin formResponsive($responsive, $name) {
+  $margin-top-flex: 0;
+  $flex-direction-flex: 0;
+  $width-__info-container: 0;
+  $width-____form-container: 0;
+
+  @if $responsive == "mobile" {
+    $margin-top-flex: 5%;
+    $flex-direction-flex: column;
+    $width-__info-container: 90%;
+    $width-____form-container: 80%;
+  } @else if $responsive == "tablet" {
+    $margin-top-flex: 1.5%;
+    $flex-direction-flex: row;
+    $width-__info-container: 20%;
+    $width-____form-container: 35%;
+  } @else if $responsive == "desktop" {
+    $margin-top-flex: 1.5%;
+    $flex-direction-flex: row;
+    $width-__info-container: 20%;
+    $width-____form-container: 25%;
+  }
+
+  .#{$name} {
+    .#{$name}-container {
+      display: flex;
+    }
+
+    //todo igual en desktop
+    .#{$name}__title-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-top: 50px;
+      margin-left: 50px;
+      margin-right: 50px;
+      margin-bottom: 5%;
+
+      .#{$name}__title {
+        font-family: Josefin Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 33px;
+        line-height: 100%;
+        text-align: center;
+        margin-top: 10%;
+        margin-bottom: 1.5%;
+      }
+
+      .#{$name}__text {
+        font-family: Josefin Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        margin-top: 1.5%;
+        text-align: center;
+      }
+    }
+
+    .#{$name}__flex {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: $flex-direction-flex;
+
+      /* SACAR ESE MARGIN TOP CUANDO PUEDA MODIFICAR EL HEIGHT DEL FORM*/
+      margin-top: $margin-top-flex;
+
+      .#{$name}__info-container {
+        width: $width-__info-container;
+
+        .#{$name}__info-container__title {
+          font-family: Josefin Sans;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 30px;
+          line-height: 120%;
+        }
+
+        .#{$name}__info-container__text {
+          font-family: Josefin Sans;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 120%;
+        }
+      }
+
+      .#{$name}__form-container {
+        width: $width-____form-container;
+        height: 20%;
+        margin-top: 5%;
+        /*box-sizing: border-box;*/
+        background-color: map-get($colores, amarillo);
+        padding: 1%;
+        text-align: center;
+        border-radius: 1%;
+
+        .#{$name}__form-container__title {
+          font-family: Josefin Sans;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 24px;
+          line-height: 26px;
+          padding: 5%;
+
+          /* identical to box height */
+
+          color: map-get($colores, negro);
+        }
+
+        .#{$name}__form-container__item {
+          display: inline-block;
+          /* aunque este el inline block no me deja darle alto, la manera de
+      que quede bien fue dandole mas pading*/
+          border-style: none;
+          margin: 1%;
+          width: 90%;
+          font-family: Josefin Sans;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 13px;
+          line-height: 15px;
+          color: map-get($colores, gris);
+          padding: 3%;
+        }
+
+        .turnos__form-container__drop-down {
+          display: inline-block;
+          /* aunque este el inline block no me deja darle alto, la manera de
+          que quede bien fue dandole mas pading*/
+          border-style: none;
+          margin: 1%;
+          width: 90%;
+          font-family: Josefin Sans;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 13px;
+          line-height: 15px;
+          color: map-get($colores, gris);
+          padding: 3%;
+        }
+      }
+
+      .btn-#{$name}-container {
+        overflow: hidden;
+
+        &:hover {
+          transform: translatey(2px);
+        }
+
+        .#{$name}__form-container__btn {
+          border-style: none;
+          width: 96%;
+          padding: 3%;
+          font-family: Josefin Sans;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 13px;
+          line-height: 15px;
+          background-color: map-get($colores, amarilloBtn);
+          color: map-get($colores, blanco);
+          margin-top: 4%;
+          margin-bottom: 4%;
+          cursor: pointer;
+
+          /* transicion*/
+
+          transition: all 0.5s ease-in-out;
+
+          &:hover {
+            background: map-get($colores, rosa);
+          }
+
+          &::before {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 1px;
+            background: map-get($colores, blanco);
+            top: 0;
+            left: 0;
+            animation: rotate 1s ease-in-out;
+          }
+
+          &::after {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 1px;
+            background: map-get($colores, blanco);
+            bottom: 0;
+            left: 0;
+            animation: rotate 1s ease-in-out;
+          }
+
+          @keyframes rotate {
+            0% {
+              width: 0;
+            }
+            100% {
+              width: 150%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @if $responsive == "mobile" {
+    .#{$name} {
+      .#{$name}__flex {
+        .#{$name}__info-container {
+          .#{$name}__form-container {
+            margin-top: 5%;
+
+            .#{$name}__form-container__title {
+              padding: 5%;
+            }
+          }
+        }
+      }
+    }
+  } @else if $responsive == "tablet" {
+    .#{$name} {
+      .#{$name}__flex {
+        .#{$name}__form-container {
+          margin-left: 15%;
+        }
+      }
+    }
+  } @else if $responsive == "desktop" {
+    .#{$name} {
+      .#{$name}__title-container {
+        margin-bottom: 0px;
+      }
+
+      .#{$name}__flex {
+        .#{$name}__form-container {
+          margin-left: 10%;
+          margin-top: 0px;
+        }
+      }
+    }
+  }
+}

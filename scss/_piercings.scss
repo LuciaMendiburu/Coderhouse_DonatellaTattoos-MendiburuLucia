@@ -1,42 +1,63 @@
+/*! ----------------------- MOBILE FIRST ----------------------- */
 
+@media (max-width: 480px) {
+  /* Piercings
+       ========================================================================== */
 
+  /*
+  /* ---------- piercings --------- */
+
+  @include piercingsResponsive();
+
+  /* ---------- general --------- */
+
+  .background-piercings {
+    background-image: url("../data/piercingsBackground.png");
+
+    /* it fits the backdround image to the size of the browser window */
+    display: block;
+    background-size: cover;
+    background-position: 50% 50%;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/*! ----------------------- TABLET ----------------------- */
+
+@media (min-width: 481px) and (max-width: 1024px) {
+  /* Piercings
+       ========================================================================== */
+
+  /*
+  /* ---------- piercings --------- */
+
+  @include piercingsResponsive();
+
+  /* ---------- general --------- */
+
+  .background-piercings {
+    background-image: url("../data/piercingsBackground.png");
+
+    /* it fits the backdround image to the size of the browser window */
+    display: block;
+    background-size: cover;
+    background-position: 50% 50%;
+    max-width: 100%;
+    height: auto;
+  }
+}
 
 /*! ----------------------- DESKTOP ----------------------- */
 
 @media (min-width: 1025px) {
-
-    /* Piercings
+  /* Piercings
        ========================================================================== */
-  
-    /*
+
+  /*
   /* ---------- piercings --------- */
-  
-  .piercings__title-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 50px;
-    margin-left: 50px;
-    margin-right: 50px;
-  }
 
-  .piercings__text {
-    font-family: Josefin Sans;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 33px;
-    line-height: 100%;
-    text-align: center;
-    margin-top: 10%;
-    margin-bottom: 1.5%;
-  }
-
-  /* galería */
-
-  .galeria {
-    max-width: 80%;
-  }
+  @include piercingsResponsive();
 
   /* ---------- general --------- */
 

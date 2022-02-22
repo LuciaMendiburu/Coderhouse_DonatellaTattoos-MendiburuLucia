@@ -1,3 +1,62 @@
+/*! ----------------------- MOBILE FIRST ----------------------- */
+
+@media (max-width: 480px) {
+
+/* Turnos
+     ========================================================================== */
+ 
+  /*
+/*turnos*/
+
+@include formResponsive(mobile,turnos);
+
+/* ----------- general ----------- */
+
+.background-turnos {
+  background-image: url("../data/contacto-turnosBackground.png");
+
+  /* it fits the backdround image to the size of the browser window */
+  display: block;
+  background-size: cover;
+  background-position: 50% 50%;
+  max-width: 100%;
+  height: auto;
+} 
+
+}
+
+
+
+
+
+
+/*! ----------------------- TABLET ----------------------- */
+
+@media (min-width: 481px) and (max-width: 1024px) {
+
+ /* Turnos
+     ========================================================================== */
+ 
+  /*
+/*turnos*/
+
+@include formResponsive(tablet,turnos);
+
+/* ----------- general ----------- */
+
+.background-turnos {
+  background-image: url("../data/contacto-turnosBackground.png");
+
+  /* it fits the backdround image to the size of the browser window */
+  display: block;
+  background-size: cover;
+  background-position: 50% 50%;
+  max-width: 100%;
+  height: auto;
+} 
+
+
+}
 
 /*! ----------------------- DESKTOP ----------------------- */
 
@@ -5,200 +64,11 @@
 
 /* Turnos
      ========================================================================== */
-
+ 
   /*
 /*turnos*/
 
-.turnos-container {
-    display: flex;
-  }
-  .turnos__title-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 50px;
-    margin-left: 50px;
-    margin-right: 50px;
-  }
-
-  .turnos__text {
-    font-family: Josefin Sans;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    margin-top: 1.5%;
-
-    /* SACAR ESE MARGIN BOTTOM CUANDO PUEDA MODIFICAR EL HEIGHT DEL FORM*/
-
-    margin-bottom: 2.5%;
-  }
-
-  .turnos__title {
-    font-family: Josefin Sans;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 33px;
-    line-height: 100%;
-    text-align: center;
-    margin-top: 10%;
-    margin-bottom: 1.5%;
-  }
-
-  .turnos-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    margin-top: 55px;
-    margin-left: 50px;
-    margin-right: 50px;
-  }
-
-  .turnos__info-container__title {
-    font-family: Josefin Sans;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 30px;
-    line-height: 120%;
-  }
-
-  .turnos__info-container__text {
-    font-family: Josefin Sans;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 120%;
-  }
-
-  .turnos__flex {
-    margin-top: 4%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .turnos__info-container {
-    width: 20%;
-    margin-left: 5%;
-  }
-
-  .turnos__form-container {
-    width: 25%;
-    height: 20%;
-    margin-left: 10%;
-    /*box-sizing: border-box;*/
-    background-color: #ffe2bb;
-    padding: 1%;
-    text-align: center;
-    border-radius: 1%;
-  }
-
-  .turnos__form-container__title {
-    font-family: Josefin Sans;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 26px;
-    /* identical to box height */
-
-    color: #000000;
-  }
-
-  .turnos__form-container__item {
-    display: inline-block;
-    /* aunque este el inline block no me deja darle alto, la manera de
-que quede bien fue dandole mas pading*/
-    border-style: none;
-    margin: 1%;
-    width: 90%;
-    font-family: Josefin Sans;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 13px;
-    line-height: 15px;
-    color: #757575;
-    padding: 3%;
-  }
-
-  .turnos__form-container__drop-down {
-    display: inline-block;
-    /* aunque este el inline block no me deja darle alto, la manera de
-    que quede bien fue dandole mas pading*/
-    border-style: none;
-    margin: 1%;
-    width: 90%;
-    font-family: Josefin Sans;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 13px;
-    line-height: 15px;
-    color: #757575;
-    padding: 3%;
-  }
-
-  .turnos__form-container__btn {
-    border-style: none;
-    width: 96%;
-    padding: 3%;
-    font-family: Josefin Sans;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 13px;
-    line-height: 15px;
-    background-color: #ffa429;
-    color: #ffffff;
-    margin-top: 4%;
-    margin-bottom: 4%;
-    cursor: pointer;
-
-    /* transicion*/
-
-    transition: all 0.5s ease-in-out;
-  }
-
-  .btn-turnos-container {
-    overflow: hidden;
-  }
-
-  .btn-turnos-container:hover {
-    transform: translatey(2px);
-  }
-
-  .turnos__form-container__btn:hover {
-    background: #f363ac;
-  }
-
-  .turnos__form-container__btn::before {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 1px;
-    background: white;
-    top: 0;
-    left: 0;
-    animation: rotate 1s ease-in-out;
-  }
-
-  .turnos__form-container__btn::after {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 1px;
-    background: white;
-    bottom: 0;
-    left: 0;
-    animation: rotate 1s ease-in-out;
-  }
-
-  @keyframes rotate {
-    0% {
-      width: 0;
-    }
-    100% {
-      width: 150%;
-    }
-  }
+@include formResponsive(desktop,turnos);
 
   /* ----------- general ----------- */
 
