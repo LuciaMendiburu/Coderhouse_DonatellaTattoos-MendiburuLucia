@@ -205,7 +205,7 @@ a {
   .intro {
     color: #ffffff;
     margin-left: 10%;
-    margin-top: 120px; }
+    margin-top: 20px; }
     .intro .intro__title {
       font-family: "Amatic SC", cursive;
       font-size: 63px; }
@@ -219,7 +219,7 @@ a {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    margin-top: 300px;
+    margin-top: 150px;
     align-items: center; }
     .items .items__container-tattoos {
       margin: 10%;
@@ -374,7 +374,8 @@ a {
     flex-direction: column;
     margin-top: 60px;
     margin-left: 50px;
-    margin-right: 50px; }
+    margin-right: 50px;
+    margin-bottom: 50px; }
     .faq__title-container .faq__text {
       font-family: Josefin Sans;
       font-style: normal;
@@ -665,7 +666,7 @@ a {
         margin-left: 5px; }
   /*-------------  general -------------*/
   .background-index {
-    background-image: url("../data/Background.png");
+    background-image: url("../data/Background-mobile.png");
     /* it fits the backdround image to the size of the browser window */
     display: block;
     background-size: cover;
@@ -878,7 +879,8 @@ a {
     flex-direction: column;
     margin-top: 60px;
     margin-left: 50px;
-    margin-right: 50px; }
+    margin-right: 50px;
+    margin-bottom: 50px; }
   .faq__text {
     font-family: Josefin Sans;
     font-style: normal;
@@ -1348,7 +1350,8 @@ a {
     flex-direction: column;
     margin-top: 60px;
     margin-left: 50px;
-    margin-right: 50px; }
+    margin-right: 50px;
+    margin-bottom: 50px; }
   .faq__text {
     font-family: Josefin Sans;
     font-style: normal;

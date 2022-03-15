@@ -45,6 +45,7 @@
     margin-top: 60px;
     margin-left: 50px;
     margin-right: 50px;
+    margin-bottom: 50px;
 
     .faq__text {
       font-family: Josefin Sans;
@@ -156,7 +157,7 @@
 
   /*-------------  general -------------*/
 
-  @include background(index, Background);
+  @include background(index, Background-mobile);
 
   .ubicacion {
     display: grid;
@@ -235,6 +236,7 @@
     margin-top: 60px;
     margin-left: 50px;
     margin-right: 50px;
+    margin-bottom: 50px;
   }
 
   .faq__text {
@@ -387,6 +389,7 @@
     margin-top: 60px;
     margin-left: 50px;
     margin-right: 50px;
+    margin-bottom: 50px;
   }
 
   .faq__text {

@@ -9,7 +9,7 @@
 
   @if $responsive == "mobile" {
     $margin-left: 10%;
-    $margin-top: 120px;
+    $margin-top: 20px;
     $font-size: 63px;
   } @else if $responsive == "tablet" {
     $margin-left: 10%;
@@ -52,7 +52,7 @@
     $margin-img: 10%;
     $flexDirection-img: row;
     $fontWeight-txt: 600;
-    $margin-top: 300px;
+    $margin-top: 150px;
   } @else if $responsive == "tablet" {
     $margin-img: 10%;
     $flexDirection-img: row;
