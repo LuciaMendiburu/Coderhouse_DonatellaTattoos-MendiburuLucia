@@ -1,0 +1,47 @@
+/*! ----------------------- MOBILE FIRST ----------------------- */
+
+@media (max-width: 480px) {
+  /* Turnos
+     ========================================================================== */
+
+  /*
+/*turnos*/
+
+  @include formResponsive(mobile, turnos);
+
+  /* ----------- general ----------- */
+
+  @include background(turnos, contacto-turnosBackground);
+}
+
+/*! ----------------------- TABLET ----------------------- */
+
+@media (min-width: 481px) and (max-width: 1024px) {
+  /* Turnos
+     ========================================================================== */
+
+  /*
+/*turnos*/
+
+  @include formResponsive(tablet, turnos);
+
+  /* ----------- general ----------- */
+
+  @include background(turnos, contacto-turnosBackground);
+}
+
+/*! ----------------------- DESKTOP ----------------------- */
+
+@media (min-width: 1025px) {
+  /* Turnos
+     ========================================================================== */
+
+  /*
+/*turnos*/
+
+  @include formResponsive(desktop, turnos);
+
+  /* ----------- general ----------- */
+
+  @include background(turnos, contacto-turnosBackground);
+}

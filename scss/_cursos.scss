@@ -1,0 +1,43 @@
+@media (max-width: 480px) {
+  /* Cursos
+     ========================================================================== */
+
+  /*
+/* ------- cursos --------- */
+
+  @include cursosResponsive(mobile);
+
+  /* ----------- body ----------- */
+  @include background(cursos, cursosBackground);
+}
+
+/*! ----------------------- TABLET ----------------------- */
+
+@media (min-width: 481px) and (max-width: 1024px) {
+  /* Cursos
+     ========================================================================== */
+
+  /*
+/* ------- cursos --------- */
+
+  @include cursosResponsive(tablet);
+
+  /* ----------- body ----------- */
+
+  @include background(cursos, cursosBackground);
+}
+
+/*! ----------------------- DESKTOP ----------------------- */
+
+@media (min-width: 1025px) {
+  /* Cursos
+     ========================================================================== */
+
+  /*
+/* ------- cursos --------- */
+  @include cursosResponsive(desktop);
+
+  /* ----------- body ----------- */
+
+  @include background(cursos, cursosBackground);
+}

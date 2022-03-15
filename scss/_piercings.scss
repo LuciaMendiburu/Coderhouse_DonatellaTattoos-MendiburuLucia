@@ -1,0 +1,46 @@
+/*! ----------------------- MOBILE FIRST ----------------------- */
+
+@media (max-width: 480px) {
+  /* Piercings
+       ========================================================================== */
+
+  /*
+  /* ---------- piercings --------- */
+
+  @include piercingsResponsive();
+
+  /* ---------- general --------- */
+  @include background(piercings, piercingsBackground);
+}
+
+/*! ----------------------- TABLET ----------------------- */
+
+@media (min-width: 481px) and (max-width: 1024px) {
+  /* Piercings
+       ========================================================================== */
+
+  /*
+  /* ---------- piercings --------- */
+
+  @include piercingsResponsive();
+
+  /* ---------- general --------- */
+
+  @include background(piercings, piercingsBackground);
+}
+
+/*! ----------------------- DESKTOP ----------------------- */
+
+@media (min-width: 1025px) {
+  /* Piercings
+       ========================================================================== */
+
+  /*
+  /* ---------- piercings --------- */
+
+  @include piercingsResponsive();
+
+  /* ---------- general --------- */
+
+  @include background(piercings, piercingsBackground);
+}

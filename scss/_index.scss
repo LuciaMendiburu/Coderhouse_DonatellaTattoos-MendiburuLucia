@@ -1,0 +1,525 @@
+/*! ----------------------- MOBILE FIRST ----------------------- */
+
+@media (max-width: 480px) {
+  /* Index
+       ========================================================================== */
+
+  @include navBarMobile();
+
+  /*------------- intro -------------*/
+
+  @include introResponsive(mobile);
+
+  /*------------- items -------------*/
+
+  @include itemsResponsive(mobile);
+
+  /*------------- sobre mi -------------*/
+
+  @include sobreMiReponsive(mobile);
+
+  .sobre-mi {
+    margin: 3%;
+    margin-bottom: 100px;
+
+    .sobre-mi__text__flex {
+      margin: 5%;
+
+      .sobre-mi__text2 {
+        margin-top: 50px;
+      }
+    }
+  }
+
+  /*------------- trabajos -------------*/
+
+  @include trabajosReponsive(mobile);
+
+  /*------------- faq -------------*/
+
+  .faq__title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 60px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+
+    .faq__text {
+      font-family: Josefin Sans;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 33px;
+      line-height: 100%;
+      text-align: center;
+      margin-top: 10%;
+      margin-bottom: 1.5%;
+    }
+  }
+
+  .faq-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+
+    /*------------- faq__que -------------*/
+
+    .que-container {
+      margin: 5%;
+
+      .que-list {
+        margin-left: 5%;
+        list-style: none;
+        padding-left: 0px;
+        margin-left: -3%;
+        margin-top: 30px;
+        text-align: center;
+
+        .que-container__item {
+          display: inline-block;
+          font-family: Josefin Sans;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 120%;
+          text-decoration: none;
+          color: map-get($colores, negro);
+          flex-wrap: wrap;
+          margin-bottom: 20px;
+        }
+      }
+    }
+
+    /*------------- faq__ans -------------*/
+
+    .ans-container__title {
+      font-family: Josefin Sans;
+      font-style: normal;
+      font-weight: bold;
+
+      line-height: 120%;
+      text-align: center;
+      color: map-get($colores, negro);
+    }
+
+    .ans-container__text {
+      font-family: Josefin Sans;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 120%;
+      text-align: center;
+    }
+  }
+
+  /*------------- parallax turnos -------------*/
+
+  @include parallax(turno);
+
+  /*------------- cursos -------------*/
+
+  @include cursosIndexResponsive(mobile);
+
+  /*------------- parallax tienda -------------*/
+
+  @include parallax(tienda);
+
+  /*------------- ubicación -------------*/
+
+  @include ubicacionResponsive(mobile);
+
+  .ubicacion {
+    margin-top: 50px;
+    margin-left: 10%;
+
+    .ubicacion-map {
+      width: 90%;
+    }
+
+    .ubicacion-info {
+      margin-top: 50px;
+
+      .ubicacion-info__title {
+        margin-bottom: 5%;
+      }
+    }
+  }
+
+  /*------------- footer -------------*/
+
+  @include footerReponsive(mobile);
+
+  /*-------------  general -------------*/
+
+  @include background(index, Background-mobile);
+
+  .ubicacion {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "ubicacion-info"
+      "mapa";
+  }
+
+  #mapa {
+    grid-area: mapa;
+  }
+
+  #ubicacion-info {
+    grid-area: ubicacion-info;
+  }
+}
+
+/*! ----------------------- TABLET ----------------------- */
+
+@media (min-width: 481px) and (max-width: 1024px) {
+  /* Index
+       ========================================================================== */
+
+  /*------- nav bar -------*/
+
+  .nav-bar-desktop {
+    display: none;
+  }
+
+  @include navBarMobile();
+
+  /*------------- intro -------------*/
+
+  @include introResponsive(tablet);
+
+  /*------------- items -------------*/
+
+  @include itemsResponsive(tablet);
+
+  /*------------- sobre mi -------------*/
+  @include sobreMiReponsive(tablet);
+
+  .sobre-mi {
+    margin: 3%;
+    margin-bottom: 100px;
+
+    .sobre-mi__text__flex {
+      margin-left: 60px;
+
+      .sobre-mi__text2 {
+        margin-top: 50px;
+      }
+    }
+
+    .sobre-mi__img {
+      margin-left: 110px;
+    }
+  }
+
+  /*------------- trabajos -------------*/
+
+  @include trabajosReponsive(tablet);
+
+  .trabajos-container {
+    margin-top: 10px;
+  }
+
+  /*------------- faq -------------*/
+
+  .faq__title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 60px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+  }
+
+  .faq__text {
+    font-family: Josefin Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 33px;
+    line-height: 100%;
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 1.5%;
+  }
+
+  .faq-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  /*------------- faq__que -------------*/
+
+  .que-container {
+    margin: 5%;
+  }
+
+  .que-list {
+    margin-left: 5%;
+    list-style: none;
+    padding-left: 0px;
+    margin-left: -3%;
+    margin-top: 30px;
+  }
+
+  .que-container__item {
+    display: inline-block;
+    font-family: Josefin Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 120%;
+    text-decoration: none;
+    color: map-get($colores, negro);
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+
+  /*------------- faq__ans -------------*/
+
+  .ans-container__title {
+    font-family: Josefin Sans;
+    font-style: normal;
+    font-weight: bold;
+
+    line-height: 120%;
+    text-align: start;
+    color: map-get($colores, negro);
+  }
+
+  .ans-container__text {
+    font-family: Josefin Sans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+  }
+
+  /*------------- parallax turnos -------------*/
+
+  @include parallax(turno);
+
+  /*------------- cursos -------------*/
+
+  @include cursosIndexResponsive(tablet);
+
+  .cursos-tatuajes-container {
+    margin-top: 300px;
+  }
+
+  /*------------- parallax tienda -------------*/
+
+  @include parallax(tienda);
+
+  /*------------- ubicación -------------*/
+
+  @include ubicacionResponsive(tablet);
+
+  .ubicacion {
+    margin-top: 100px;
+
+    .ubicacion-info {
+      .ubicacion-info__title {
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  /*------------- footer -------------*/
+  @include footerReponsive(tablet);
+
+  /*-------------  general -------------*/
+
+  @include background(index, Background);
+}
+
+/*! ----------------------- DESKTOP ----------------------- */
+
+@media (min-width: 1025px) {
+  /* Index
+       ========================================================================== */
+
+  /*
+  
+  /*------------- intro -------------*/
+
+  @include introResponsive(desktop);
+
+  /*------------- items -------------*/
+
+  @include itemsResponsive(desktop);
+
+  /*------------- sobre mi -------------*/
+
+  @include sobreMiReponsive(desktop);
+
+  .sobre-mi {
+    .sobre-mi__text__flex {
+      margin-left: 60px;
+    }
+
+    .sobre-mi__img {
+      margin-left: 110px;
+    }
+  }
+
+  /*------------- trabajos -------------*/
+
+  @include trabajosReponsive(desktop);
+
+  /*------------- faq -------------*/
+
+  .faq__title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 60px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+  }
+
+  .faq__text {
+    font-family: Josefin Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 33px;
+    line-height: 100%;
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 1.5%;
+  }
+
+  .faq-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  /*------------- faq__que -------------*/
+
+  .que-container {
+    background: url("../data/marcoFaq.png") no-repeat center;
+
+    width: 483px;
+    height: 517px;
+
+    /*centrar contenido*/
+    display: flex;
+
+    /*centrar contenido eje X*/
+    justify-content: center;
+
+    /*centrar contenido eje Y*/
+    align-items: center;
+  }
+
+  .que-list {
+    margin-left: 5%;
+    list-style: none;
+    padding-left: 0px;
+    margin-left: -3%;
+    margin-top: 30px;
+  }
+
+  .que-container__item {
+    display: inline-block;
+    font-family: Josefin Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 120%;
+    text-decoration: none;
+    color: map-get($colores, negro);
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+
+  /*------------- faq__ans -------------*/
+
+  .ans-container__title {
+    font-family: Josefin Sans;
+    font-style: normal;
+    font-weight: bold;
+
+    line-height: 120%;
+    text-align: start;
+    color: map-get($colores, negro);
+  }
+
+  .ans-container__text {
+    font-family: Josefin Sans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+  }
+
+  /*------------- parallax turnos -------------*/
+
+  @include parallax(turno);
+
+  /*------------- cursos -------------*/
+
+  @include cursosIndexResponsive(desktop);
+
+  /*------------- parallax tienda -------------*/
+
+  @include parallax(tienda);
+
+  /*------------- ubicación -------------*/
+
+  @include ubicacionResponsive(desktop);
+
+  .ubicacion {
+    margin-top: 120px;
+
+    .ubicacion-info {
+      margin-left: 0px;
+    }
+
+    .ubicacion-map {
+      margin-right: 50px;
+    }
+  }
+
+  /*------------- footer -------------*/
+
+  @include footerReponsive(desktop);
+
+  .footer {
+    .footer__socialMedia {
+      margin-left: 50%;
+      margin-top: 70px;
+    }
+
+    .footer__socialMedia__title {
+      margin-bottom: 10px;
+    }
+
+    .footer__socialMedia__icon {
+      margin-left: 5px;
+    }
+  }
+
+  /*-------------  general -------------*/
+
+  @include background(index, Background);
+}

@@ -1,0 +1,55 @@
+@mixin navBarMobile {
+  .nav-bar-desktop {
+    display: none;
+  }
+
+  .nav-bar-mb-tb {
+    background: map-get($colores, rosa);
+    width: 100%;
+
+    .nav-bar-mb-tb__title {
+      background: map-get($colores, rosa);
+      font-family: "Amatic SC", cursive;
+      color: map-get($colores, negro);
+    }
+
+    .nav-bar-mb-tb__item {
+      color: map-get($colores, blanco);
+      font-family: "Josefin Sans", sans-serif;
+      font-weight: bold;
+    }
+  }
+}
+
+@mixin navBar($page) {
+  $name: 0;
+  $color: 0;
+
+  @if $page == "index" {
+    $name: nav-bar;
+    $color: map-get($colores, blanco);
+  } @else if $page == "pages" {
+    $name: nav-bar-page;
+    $color: map-get($colores, rosa);
+  }
+
+  .#{$name}__flex {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid $color;
+
+    .#{$name}__text {
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 13px;
+      margin: 15px;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      list-style: none;
+    }
+
+    .#{$name}__text__link {
+      text-decoration: none;
+      color: $color;
+    }
+  }
+}

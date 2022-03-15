@@ -1,0 +1,407 @@
+//-------------index--------------//
+
+//-------------intro--------------//
+
+@mixin introResponsive($responsive) {
+  $margin-left: 0;
+  $margin-top: 0;
+  $font-size: 0;
+
+  @if $responsive == "mobile" {
+    $margin-left: 10%;
+    $margin-top: 20px;
+    $font-size: 63px;
+  } @else if $responsive == "tablet" {
+    $margin-left: 10%;
+    $margin-top: 90px;
+    $font-size: 63px;
+  } @else if $responsive == "desktop" {
+    $margin-left: 20%;
+    $margin-top: 60px;
+    $font-size: 63px;
+  }
+
+  .intro {
+    color: map-get($colores, blanco);
+    margin-left: $margin-left;
+    margin-top: $margin-top;
+
+    .intro__title {
+      font-family: "Amatic SC", cursive;
+      font-size: $font-size;
+    }
+
+    .intro__desc {
+      margin-top: 10px;
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 20px;
+      font-weight: 400;
+    }
+  }
+}
+
+//------items-------//
+
+@mixin itemsResponsive($responsive) {
+  $margin-img: 0;
+  $flexDirection-img: 0;
+  $fontWeight-txt: 0;
+  $margin-top: 0;
+
+  @if $responsive == "mobile" {
+    $margin-img: 10%;
+    $flexDirection-img: row;
+    $fontWeight-txt: 600;
+    $margin-top: 150px;
+  } @else if $responsive == "tablet" {
+    $margin-img: 10%;
+    $flexDirection-img: row;
+    $fontWeight-txt: 600;
+    $margin-top: 300px;
+  } @else if $responsive == "desktop" {
+    $margin-img: 0%;
+    $flexDirection-img: row;
+    $fontWeight-txt: 600;
+    $margin-top: 200px;
+  }
+
+  .items {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: $margin-top;
+    align-items: center;
+
+    .items__container-tattoos {
+      @include imgFondo($margin-img, 224px, 224px, tattoos, $flexDirection-img);
+
+      .items__tattoos {
+        @include imgFondo__txt($fontWeight-txt);
+      }
+    }
+
+    .items__container-piercings {
+      @include imgFondo(
+        $margin-img,
+        183px,
+        224px,
+        piercings,
+        $flexDirection-img
+      );
+
+      .items__piercings {
+        @include imgFondo__txt($fontWeight-txt);
+      }
+    }
+
+    .items__container-cursos {
+      @include imgFondo($margin-img, 215px, 224px, cursos, $flexDirection-img);
+
+      .items__cursos {
+        @include imgFondo__txt($fontWeight-txt);
+      }
+    }
+
+    .items__container-tienda {
+      @include imgFondo($margin-img, 218px, 223px, tienda, $flexDirection-img);
+
+      .items__tienda {
+        @include imgFondo__txt($fontWeight-txt);
+      }
+    }
+  }
+}
+
+//------sobre mi -------//
+
+@mixin sobreMiReponsive($responsive) {
+  $flex-direction: 0;
+  $margin-top-container: 0;
+  $margin-top-textFlex: 0;
+  $size-text1: 0;
+  $size-text2: 0;
+  $size-img: 0;
+
+  @if $responsive == "mobile" {
+    $flex-direction: column;
+    $margin-top-container: 150px;
+    $margin-top-textFlex: 90px;
+    $size-text1: 34px;
+    $size-text2: 16px;
+    $size-img: 80%;
+  } @else if $responsive == "tablet" {
+    $flex-direction: row;
+    $margin-top-container: 60px;
+    $margin-top-textFlex: 90px;
+    $size-text1: 34px;
+    $size-text2: 16px;
+    $size-img: 40%;
+  } @else if $responsive == "desktop" {
+    $flex-direction: row;
+    $margin-top-container: 60px;
+    $margin-top-textFlex: 120px;
+    $size-text1: 34px;
+    $size-text2: 16px;
+    $size-img: 32%;
+  }
+
+  .sobre-mi {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: $flex-direction;
+    margin-top: $margin-top-container;
+
+    .sobre-mi__text__flex {
+      margin-top: $margin-top-textFlex;
+
+      .sobre-mi__text1 {
+        @include rosaTitle($size-text1);
+      }
+
+      .sobre-mi__text2 {
+        @include rosaTitle__txt($size-text2);
+        margin-top: 50px;
+      }
+    }
+
+    .sobre-mi__img {
+      align-self: center;
+      justify-self: center;
+      width: $size-img;
+      height: $size-img;
+      margin-top: 50px;
+    }
+  }
+}
+
+/*------------- Trabajos -------------*/
+
+@mixin trabajosReponsive($responsive) {
+  $margin: 0;
+  $width: 0;
+  $height: 0;
+
+  @if $responsive == "mobile" {
+    $margin: 0;
+    $width: 100%;
+    $height: 565px;
+  } @else if $responsive == "tablet" {
+    $margin: 0;
+    $width: 100%;
+    $height: 565px;
+  } @else if $responsive == "desktop" {
+    $margin: 0px;
+    $width: 100%;
+    $height: 565px;
+  }
+
+  .trabajos-container {
+    @include imgFondo($margin, $width, $height, trabajosCarrousel, column);
+
+    .trabajos__text {
+      font-family: "Josefin Sans", sans-serif;
+      margin-bottom: 20px;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 120%;
+      text-align: center;
+      color: map-get($colores, negro);
+      word-spacing: 50px;
+      letter-spacing: 7px;
+    }
+  }
+}
+
+//------parallax-genérico------//
+
+@mixin parallax($name) {
+  .parallax-#{$name} {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 180px;
+
+    .parallax {
+      background: url("../data/parallax.jpg") no-repeat center;
+      background-size: cover;
+      background-attachment: fixed;
+      height: 205px;
+      width: 100%;
+
+      /*centrar contenido*/
+      display: flex;
+      flex-direction: column;
+
+      /*centrar contenido eje X*/
+      justify-content: center;
+
+      /*centrar contenido eje Y*/
+      align-items: center;
+
+      .parallax-#{$name}__btn {
+        font-family: Josefin Sans;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        padding: 1%;
+        padding-left: 4%;
+        padding-right: 4%;
+        border: 5px solid map-get($colores, blanco);
+        background-color: none;
+        cursor: pointer;
+        box-sizing: border-box;
+
+        /* esto hace al boton transparente*/
+
+        background-color: Transparent;
+        background-repeat: no-repeat;
+
+        /* trancision */
+
+        transition: linear 0.7s;
+
+        &:hover {
+          box-shadow: inset 400px 0px 1px map-get($colores, rosa);
+          color: map-get($colores, blanco);
+        }
+      }
+
+      .parallax-#{$name}__text {
+        font-family: Josefin Sans;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 120%;
+        padding-left: 5%;
+        padding-right: 5%;
+        margin-top: 10px;
+        text-align: center;
+      }
+    }
+  }
+}
+
+//------cursos------//
+
+@mixin cursosIndexResponsive($responsive) {
+  $flex-direction: 0;
+  $margin-tatuajes: 0;
+  $margin-piercings: 0;
+  $weight-title: 0;
+  $weight-text: 0;
+
+  @if $responsive == "mobile" {
+    $flex-direction: column;
+    $margin-tatuajes: 5%;
+    $margin-piercings: 0%;
+    $weight-title: 700;
+    $weight-text: 300;
+  } @else if $responsive == "tablet" {
+    $flex-direction: row;
+    $margin-tatuajes: 0%;
+    $margin-piercings: 0%;
+    $weight-title: 700;
+    $weight-text: 300;
+  } @else if $responsive == "desktop" {
+    $flex-direction: row;
+    $margin-tatuajes: 0%;
+    $margin-piercings: 0%;
+    $weight-title: 700;
+    $weight-text: 300;
+  }
+
+  .cursos__index {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: $flex-direction;
+    justify-content: space-evenly;
+    margin-top: 150px;
+
+    .cursos-tatuajes-container {
+      @include imgFondo($margin-tatuajes, 251px, 294px, curTattoos, column);
+
+      .cursos-tatuajes-content__index {
+        margin-bottom: 20px;
+        margin-left: 4%;
+
+        .cursos-tatuajes__title__index {
+          @include imgFondo__txt($weight-title);
+        }
+
+        .cursos-tatuajes__text__index {
+          @include imgFondo__txt($weight-text);
+          margin-top: 5px;
+        }
+      }
+    }
+
+    .cursos-piercings-container {
+      @include imgFondo($margin-piercings, 285px, 271px, curPiercings, column);
+
+      .cursos-piercings-content {
+        margin-top: 18px;
+        margin-left: 2%;
+
+        .cursos-piercings__title__index {
+          @include imgFondo__txt($weight-title);
+        }
+
+        .cursos-piercings__text__index {
+          @include imgFondo__txt($weight-text);
+          margin-top: 5px;
+        }
+      }
+    }
+  }
+}
+
+//------ubicación------//
+
+@mixin ubicacionResponsive($responsive) {
+  $flex-direction: 0;
+  $size-title: 0;
+  $size-text: 0;
+
+  @if $responsive == "mobile" {
+    $flex-direction: column;
+    $size-title: 25px;
+    $size-text: 18px;
+  } @else if $responsive == "tablet" {
+    $flex-direction: row;
+    $size-title: 25px;
+    $size-text: 18px;
+  } @else if $responsive == "desktop" {
+    $flex-direction: row;
+    $size-title: 25px;
+    $size-text: 18px;
+  }
+
+  .ubicacion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    text-align: start;
+    flex-direction: $flex-direction;
+
+    .ubicacion-map {
+      margin-right: 50px;
+    }
+
+    .ubicacion-info {
+      .ubicacion-info__title {
+        @include rosaTitle($size-title);
+        margin-bottom: 5%;
+      }
+
+      .ubicacion-info__text {
+        @include rosaTitle__txt($size-text);
+      }
+    }
+  }
+}

@@ -1,0 +1,56 @@
+/*! ----------------------- MOBILE FIRST ----------------------- */
+
+@media (max-width: 480px) {
+  /* Contacto
+     ========================================================================== */
+
+  /*
+
+  
+/* ----------- contacto ----------- */
+
+  @include formResponsive(mobile, contacto);
+
+  //esta clase no esta en el html
+
+  /* ----------- body ----------- */
+  @include background(contacto, contacto-turnosBackground);
+}
+
+/*! ----------------------- TABLET ----------------------- */
+
+@media (min-width: 481px) and (max-width: 1024px) {
+  /* Contacto
+     ========================================================================== */
+
+  /*
+  
+  
+/* ----------- contacto ----------- */
+
+  @include formResponsive(tablet, contacto);
+
+  /* ----------- body ----------- */
+
+  @include background(contacto, contacto-turnosBackground);
+}
+
+/*! ----------------------- DESKTOP ----------------------- */
+
+@media (min-width: 1025px) {
+  /* Contacto
+     ========================================================================== */
+
+  /*
+ 
+
+
+ 
+/* ----------- contacto ----------- */
+
+  @include formResponsive(desktop, contacto);
+
+  /* ----------- body ----------- */
+
+  @include background(contacto, contacto-turnosBackground);
+}

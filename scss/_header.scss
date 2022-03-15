@@ -1,0 +1,56 @@
+/* --------- title bar ----------*/
+
+.title-bar {
+  background-color: map-get($colores, rosa);
+  width: 100%;
+  height: 7vh;
+  position: sticky;
+  top: 0px;
+  z-index: 5;
+
+  .title-bar__text1 {
+    display: inline-block;
+    margin: 0px;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: "Josefin Sans", sans-serif;
+    color: map-get($colores, blanco);
+    margin-left: 4.5%;
+    margin-top: 2.7vh;
+  }
+
+  .title-bar__img1 {
+    margin-left: 1.5%;
+    margin-top: 0.6%;
+    position: absolute;
+    left: 118px;
+    top: 5.5px;
+  }
+
+  .title-bar__img2 {
+    margin-left: 1.5%;
+    margin-top: 0.6%;
+    position: absolute;
+    left: 154px;
+    top: 8px;
+  }
+
+  .title-bar__text2 {
+    display: inline-block;
+    margin: 0px;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: "Josefin Sans", sans-serif;
+    color: map-get($colores, blanco);
+    margin-left: 80%;
+    margin-top: 2.5vh;
+  }
+}
+
+/*------------- nav bar -------------*/
+
+@include navBar(index);
+
+/* ---------nav bar pages ----------*/
+
+@include navBar(pages);

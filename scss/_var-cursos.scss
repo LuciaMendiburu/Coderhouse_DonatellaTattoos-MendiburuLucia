@@ -1,0 +1,118 @@
+//-------------------cursos--------------------------------
+
+@mixin cursosResponsive($responsive) {
+  $margin-top-cursos: 0;
+  $flex-direction-cursos: 0;
+  $flexDirection-img: 0;
+  $fontWeight-txt: 0;
+  $margin-img: 0;
+  $fontWeight-title: 0;
+
+  @if $responsive == "mobile" {
+    $margin-top-cursos: 60px;
+    $flex-direction-cursos: column;
+    $flexDirection-img: column;
+    $fontWeight-txt: 300;
+    $fontWeight-title: 700;
+    $margin-img: 10%;
+  } @else if $responsive == "tablet" {
+    $margin-top-cursos: 20px;
+    $flex-direction-cursos: row;
+    $flexDirection-img: column;
+    $fontWeight-txt: 300;
+    $fontWeight-title: 700;
+    $margin-img: 2%;
+  } @else if $responsive == "desktop" {
+    $margin-top-cursos: 40px;
+    $flex-direction-cursos: row;
+    $flexDirection-img: column;
+    $fontWeight-txt: 300;
+    $fontWeight-title: 700;
+    $margin-img: 2%;
+  }
+
+  /*----------------cursos------------------*/
+
+  .cursos__title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+
+    .cursos__title {
+      font-family: Josefin Sans;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 33px;
+      text-align: center;
+      margin-top: 10%;
+      margin-bottom: 1%;
+    }
+
+    .cursos__text {
+      font-family: Josefin Sans;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      margin-top: 1.5%;
+      text-align: center;
+    }
+  }
+
+  .cursos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    justify-content: space-evenly;
+    margin-top: $margin-top-cursos;
+    flex-direction: $flex-direction-cursos;
+
+    .cursos-tatuajes {
+      @include imgFondo(
+        $margin-img,
+        251px,
+        294px,
+        curTattoos,
+        $flexDirection-img
+      );
+
+      .cursos-tatuajes__content-container {
+        margin-left: 5%;
+      }
+
+      .cursos-tatuajes__title {
+        @include imgFondo__txt($fontWeight-title);
+      }
+
+      .cursos-tatuajes__text {
+        @include imgFondo__txt($fontWeight-txt);
+      }
+    }
+
+    .cursos-piercings {
+      @include imgFondo(
+        $margin-img,
+        285px,
+        271px,
+        curPiercings,
+        $flexDirection-img
+      );
+
+      .cursos-piercings__content-container {
+        margin-top: 30px;
+      }
+
+      .cursos-piercings__title {
+        @include imgFondo__txt($fontWeight-title);
+      }
+
+      .cursos-piercings__text {
+        @include imgFondo__txt($fontWeight-txt);
+      }
+    }
+  }
+}
